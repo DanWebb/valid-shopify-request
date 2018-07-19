@@ -1,0 +1,30 @@
+{
+  "name": "valid-shopify-request",
+  "version": "1.0.0",
+  "description": "Validate the HMAC signature Shopify sends to make sure requests are authentic!",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "tsc && ava",
+    "build": "tsc"
+  },
+  "keywords": [
+    "shopify",
+    "hmac"
+  ],
+  "author": "Dan Webb <mail@danwebb.co> (https://danwebb.co)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "10.5.2",
+    "ava": "0.25.0",
+    "get-port": "3.2.0",
+    "koa": "2.5.2",
+    "supertest": "3.1.0",
+    "tslint": "5.10.0",
+    "tslint-xo": "0.8.0",
+    "typescript": "2.9.2"
+  },
+  "dependencies": {
+    "raw-body": "2.3.3"
+  }
+}
