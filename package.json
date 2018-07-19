@@ -8,12 +8,19 @@
     "test": "tsc && ava",
     "build": "tsc"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanWebb/valid-shopify-request.git"
+  },
   "keywords": [
     "shopify",
     "hmac"
   ],
   "author": "Dan Webb <mail@danwebb.co> (https://danwebb.co)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanWebb/valid-shopify-request/issues"
+  },
   "devDependencies": {
     "@types/node": "10.5.2",
     "ava": "0.25.0",
