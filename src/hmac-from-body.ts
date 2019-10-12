@@ -4,7 +4,7 @@ import getRawBody from 'raw-body';
 import Hmacs from './types/hmacs';
 
 const hmacFromBody = async (secret: string, payload: IncomingMessage): Promise<Hmacs> => {
-	const hmacHeader = payload.headers['x-shopify-hmac-sha256'] as string;
+	const hmacHeader = (payload.headers['x-shopify-hmac-sha256'] || '').toString();
 
 	if (!hmacHeader) {
 		throw new Error('Security Error - The expected x-shopify-hmac-sha256 header was not present in the request');
