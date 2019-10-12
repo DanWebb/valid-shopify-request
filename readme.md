@@ -67,7 +67,7 @@ app.post('/webhook', async (req, res) => {
   }
 });
 
-app.server.listen(3000);
+app.listen(3000);
 ```
 
 ## FAQ
